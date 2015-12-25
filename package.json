@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michael Bullington <m.bullington@dglogik.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/IOT-DSA/dslink-javascript-midi",
+  "license": "Apache",
+  "homepage": "https://github.com/IOT-DSA/dslink-javascript-amazon-dash",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
     "babel-preset-es2015": "^6.3.13",
