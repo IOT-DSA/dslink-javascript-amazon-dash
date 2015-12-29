@@ -1,7 +1,7 @@
 {
   "name": "dslink-javascript-amazon-dash",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "description": "DSLink for Amazon Dash button.",
   "engines": {
     "node": ">=0.10.0"
