@@ -25,7 +25,7 @@ var link = new _debug.LinkProvider(process.argv.slice(2), 'amazon-dash-', {
   profiles: {
     createButton: function createButton(path, provider) {
       // params: macAddress
-      return new _debug.SimpleActionNode(path, provider, function (node, params) {
+      return new _debug.SimpleActionNode(path, provider, function (params, node) {
         var macAddress = params.macAddress;
 
         var urlEncoded = (0, _util.urlEncode)(params.macAddress);
@@ -34,14 +34,14 @@ var link = new _debug.LinkProvider(process.argv.slice(2), 'amazon-dash-', {
       });
     },
     deleteButton: function deleteButton(path, provider) {
-      return new _debug.SimpleActionNode(path, provider, function (node, params) {
+      return new _debug.SimpleActionNode(path, provider, function (params, node) {
         link.removeNode('/buttons/' + (0, _util.urlEncode)(node.configs.$$addr));
         link.save();
       });
     },
     discoverButtons: function discoverButtons(path, provider) {
       // columns: timestamp, macAddress
-      return new _debug.SimpleActionNode(path, provider, function (node, params) {
+      return new _debug.SimpleActionNode(path, provider, function (params, node) {
         var result = new _debug.AsyncTableResult();
         var listener = function listener(macAddress) {
           result.update([{
