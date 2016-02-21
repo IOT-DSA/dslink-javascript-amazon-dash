@@ -11,7 +11,7 @@
   "homepage": "https://github.com/IOT-DSA/dslink-javascript-amazon-dash",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
-    "dslink": "git://github.com/IOT-DSA/sdk-dslink-javascript.git#artifacts",
+    "dslink": "^1.0.0",
     "pcap": "git+https://github.com/mranney/node_pcap.git",
     "node-dash-button": "^0.2.5"
   },
